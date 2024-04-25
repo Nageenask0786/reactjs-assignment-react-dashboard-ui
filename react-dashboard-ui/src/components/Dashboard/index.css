@@ -1,0 +1,265 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+}
+
+.saved-libraries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-width: 85%;
+  width: 100%;
+  margin-left: 10px;
+}
+.saved-libraries > div {
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2;
+  height: 140px;
+  width: 190px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5px 10px;
+  z-index: 2;
+  position: relative;
+  bottom: 20px;
+}
+
+.heading {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+.icon {
+  margin: 0px 15px;
+}
+
+.saved-libraries > div > p {
+  color: #595959;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+.slick-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 500px;
+  padding: 0px;
+}
+.button-container {
+  display: flex;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.view-more-btn {
+  height: 30px;
+  width: 90px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 9px;
+  border: 0px;
+  margin: 10px auto;
+}
+.slick-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  width: 20%;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  height: 70%;
+  margin: 15px 0px;
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+}
+
+.heading-1 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .saved-libraries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .saved-libraries > div {
+    width: 80%;
+    margin: 0px 10% 10% 10px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slick-container,
+  .button-container {
+    width: 96%;
+    margin-top: 5%;
+    margin: 5% 2px 5% 2px;
+  }
+
+  .slick-item {
+    width: 20%;
+  }
+
+  .image {
+    height: 30%;
+  }
+
+  .content {
+    height: 70%;
+  }
+
+  .heading-1 {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .content-description {
+    font-size: 8px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slick-item {
+    width: 20%;
+  }
+
+  .saved-libraries > div {
+    width: 190px;
+    margin: 5px 10px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slick-container,
+  .button-container {
+    width: 90%;
+    margin-top: 5%;
+    margin: 10px auto;
+  }
+}
+
+.previous-next-btn {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  margin: 20% 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .slick-container {
+    width: 90%;
+    margin: 5% 5%;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .saved-libraries > div {
+    width: 190px;
+    margin: 5px 10px;
+  }
+  .slick-container,
+  .button-container {
+    width: 800px;
+    margin: 10px 20px;
+  }
+
+  .slick-item {
+    width: 20%;
+    height: 80%;
+  }
+  .heading-1 {
+    font-size: 17px;
+  }
+  .content-description {
+    font-size: 15px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+}

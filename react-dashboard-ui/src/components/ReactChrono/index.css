@@ -1,0 +1,11 @@
+.react-chrono-container {
+  width: 250px;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .react-chrono-container {
+    width: 80%;
+    margin: 10% 10px;
+  }
+}
